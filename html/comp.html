@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitions | Cubing Central</title>
+  <link rel="stylesheet" href="../css/comp.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CUBING CENTRAL</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="user-actions">
+      <a href="../img/heart_icon.png" title="Favorites"></a>
+      <a href="../img/shopping_cart.png" title="Shopping Cart"></a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="../html/shop.html">Puzzles</a>
+    <a href="#">Accessories</a>
+    <a href="#">Sale</a>
+    <a href="../html/guides.html">Guides</a>
+    <a href="../html/index.html">Timer</a>
+    <a href="../html/comp.html" class="active">Competitions</a>
+  </nav>
+
+  <main>
+    <div class="competitions-header">
+      <div class="wca-logo">
+        <img src="#" alt="WCA Logo">
+      </div>
+      <div class="header-nav">
+        <div class="tabs">
+          <a href="#" class="tab-link">Information</a>
+          <a href="#" class="tab-link active">Tävlingar</a>
+          <a href="#" class="tab-link">Resultat</a>
+          <a href="#" class="tab-link">Regler</a>
+          <a href="#" class="tab-link">Hitta oss</a>
+          <a href="#" class="tab-link">Forum</a>
+        </div>
+
+      </div>
+    </div>
+
+    <h1 class="page-title">Tävlingar</h1>
+
+    <div class="filter-section">
+      <div class="filter-header">
+        <div class="filter-tabs">
+          <button class="filter-tab active">Alla</button>
+          <button class="filter-tab">Rensa</button>
+        </div>
+        <div class="filter-button">
+          <button class="btn-filter">
+            <span class="filter-icon">🔍</span>
+            Göm filter
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-options">
+        <div class="puzzle-filters">
+          <div class="puzzle-grid">
+            <button class="puzzle-btn" title="2x2x2 Cube">
+              <div class="puzzle-icon">2×2</div>
+            </button>
+            <button class="puzzle-btn" title="3x3x3 Cube">
+              <div class="puzzle-icon">3×3</div>
+            </button>
+            <button class="puzzle-btn" title="4x4x4 Cube">
+              <div class="puzzle-icon">4×4</div>
+            </button>
+            <button class="puzzle-btn" title="5x5x5 Cube">
+              <div class="puzzle-icon">5×5</div>
+            </button>
+            <button class="puzzle-btn" title="6x6x6 Cube">
+              <div class="puzzle-icon">6×6</div>
+            </button>
+            <button class="puzzle-btn" title="7x7x7 Cube">
+              <div class="puzzle-icon">7×7</div>
+            </button>
+            <button class="puzzle-btn" title="3x3x3 Blindfolded">
+              <div class="puzzle-icon">3BLD</div>
+            </button>
+            <button class="puzzle-btn" title="3x3x3 One-Handed">
+              <div class="puzzle-icon">OH</div>
+            </button>
+            <button class="puzzle-btn" title="Clock">
+              <div class="puzzle-icon">Clock</div>
+            </button>
+            <button class="puzzle-btn" title="Megaminx">
+              <div class="puzzle-icon">Mega</div>
+            </button>
+            <button class="puzzle-btn" title="Pyraminx">
+              <div class="puzzle-icon">Pyra</div>
+            </button>
+            <button class="puzzle-btn" title="Skewb">
+              <div class="puzzle-icon">Skewb</div>
+            </button>
+            <button class="puzzle-btn" title="Square-1">
+              <div class="puzzle-icon">Sq1</div>
+            </button>
+            <button class="puzzle-btn" title="4x4x4 Blindfolded">
+              <div class="puzzle-icon">4BLD</div>
+            </button>
+            <button class="puzzle-btn" title="5x5x5 Blindfolded">
+              <div class="puzzle-icon">5BLD</div>
+            </button>
+            <button class="puzzle-btn" title="3x3x3 Multi-Blind">
+              <div class="puzzle-icon">MBLD</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="region">Region</label>
+            <select id="region">
+              <option selected>Alla regioner</option>
+            </select>
+          </div>
+          <div class="filter-group search">
+            <label for="search">Sök</label>
+            <input type="text" id="search" placeholder="Namn eller stad">
+            <button type="submit">
+              <span class="search-icon">🔍</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="date-filters">
+          <label>När</label>
+          <div class="date-buttons">
+            <button class="date-btn active">Kommande</button>
+            <button class="date-btn">Nyligen</button>
+            <button class="date-btn">Tidigare</button>
+            <button class="date-btn">Efter publicerande</button>
+            <button class="date-btn">Anpassad</button>
+          </div>
+        </div>
+
+        <div class="view-options">
+          <div class="checkbox-group">
+            <input type="checkbox" id="showIcon">
+            <label for="showIcon">Visa ikon för anmälningsstatus</label>
+          </div>
+        </div>
+
+        <div class="display-options">
+          <button class="display-btn active">
+            <span class="list-icon">≡</span>
+            Lista
+          </button>
+          <button class="display-btn">
+            <span class="map-icon">📍</span>
+            Karta
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="competitions-list">
+      <div class="list-header">
+        <h2 class="section-title">Tävlingar som pågår <span class="count">41</span></h2>
+      </div>
+
+      <table class="competitions-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Datum</th>
+            <th>Namn</th>
+            <th>Plats</th>
+            <th>Lokal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="timer-icon">⏳</td> <!--Byt ut timer med landets flagga-->
+            <td>28–30 mars 2025</td>
+            <td><span class="flag">Sweden</span> <a href="#" class="comp-link">First Solves Gothenburg</a></td>
+            <td>Sweden</td>
+            <td><a href="#" class="venue-link">Chalmers University of Technology</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">Sweden</span> <a href="#" class="comp-link">Stockholm Spin</a></td>
+            <td>Sweden, Stockholm</td>
+            <td><a href="#" class="venue-link">Lilla Alby Skola</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">Norway</span> <a href="#" class="comp-link">Oslo Open</a></td>
+            <td>Norway, Oslo</td>
+            <td><a href="#" class="venue-link">Jordal Idrettshall</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">USA</span> <a href="#" class="comp-link">GA Cuber Jackets Spring</a></td>
+            <td>USA, Atlanta</td>
+            <td><a href="#" class="venue-link">Exhibition Hall</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">USA</span> <a href="#" class="comp-link">Cubing in the 'Cuse</a></td>
+            <td>USA, Syracuse</td>
+            <td><a href="#" class="venue-link">Le Moyne College</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">USA</span> <a href="#" class="comp-link">Southeast FMC Championship</a></td>
+            <td>USA, Multiple cities</td>
+            <td><a href="#" class="venue-link">Multiple locations</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">Finland</span> <a href="#" class="comp-link">Finnish FMC Series V</a></td>
+            <td>Finland, Helsinki</td>
+            <td><a href="#" class="venue-link">Verk</a></td>
+          </tr>
+          <tr>
+            <td class="timer-icon">⏳</td>
+            <td>29 mars 2025</td>
+            <td><span class="flag">Canada</span> <a href="#" class="comp-link">St. John's Spring</a></td>
+            <td>Canada, Saint John</td>
+            <td><a href="#" class="venue-link">Memorial University of Newfoundland</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-column">
+      <h3>SUPPORT</h3>
+      <p>Contact Us</p>
+      <p>Shipping Policy</p>
+      <p>Returns & Refunds</p>
+      <p>FAQs</p>
+    </div>
+    
+    <div class="footer-column">
+      <h3>INFO</h3>
+      <p>About Us</p>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Blog</p>
+    </div>
+    
+    <div class="footer-column">
+      <h3>ACCOUNT</h3>
+      <p>My Account</p>
+      <p>Order History</p>
+      <p>Wishlist</p>
+      
+      <div class="social-icons">
+        <div class="social-icon">FB</div>
+        <div class="social-icon">IG</div>
+        <div class="social-icon">YT</div>
+        <div class="social-icon">X</div>
+      </div>
+      
+      <h3>NEWSLETTER</h3>
+      <div class="newsletter">
+        <input type="email" placeholder="Email address">
+        <button>SIGN UP</button>
+      </div>
+    </div>
+    
+    <div class="payment-methods">
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+    </div>
+    
+    <div class="copyright">
+      © 2025 Cubing Central. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
